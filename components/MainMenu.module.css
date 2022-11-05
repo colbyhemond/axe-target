@@ -1,0 +1,39 @@
+.screen {
+    margin: auto;
+    height: 100vh;
+    min-width: 500px;
+    width: fit-content;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 36px;
+}
+
+.playersnumber {
+    font-size: 76pt;
+}
+
+.setting {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}
+
+.input {
+    background-color: black;
+    border: none;
+}
+
+.playername {
+    font-size: 36px;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.cursor:hover {
+    color: greenyellow;
+}

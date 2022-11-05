@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: Silkscreen, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
@@ -13,6 +15,24 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.inputbox {
+  display: flex;
+  align-items: center;
+}
+
+input {
+  background-color: inherit;
+  border: none;
+}
+
+.inputbox input::after {
+  content: "b";
+  width: 5px;
+  height: 20px;
+  background: #ec7fff;
+  display: inline-block;
 }
 
 @media (prefers-color-scheme: dark) {
