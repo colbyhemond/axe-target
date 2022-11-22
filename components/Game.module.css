@@ -20,3 +20,8 @@
 .cursor:hover {
     color: greenyellow;
 }
+
+.crement {
+    font-size: 18pt;
+    padding: 5px;
+}

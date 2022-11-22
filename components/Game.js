@@ -66,8 +66,8 @@ export default function Game({config, onMainMenu}) {
   return (
     <div className={styles.screen}>
         <div className={styles.cursor} onClick={onMainMenu}>{`<- Main Menu`}</div>
-        <div className={styles.cursor} onClick={onIncreaseTarget}>{`+`}</div>
-        <div className={styles.cursor} onClick={onDecreaseTarget}>{`-`}</div>
+        <div className={styles.crement} onClick={onIncreaseTarget}>{`+`}</div>
+        <div className={styles.crement} onClick={onDecreaseTarget}>{`-`}</div>
         {winner ? (
           renderWinner(winner)
         ) : (
