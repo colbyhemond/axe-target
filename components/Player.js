@@ -37,16 +37,16 @@ export default function Player({player, onEndOfTurn, onBust}) {
 
   return (
     <>
+      <div className={styles.targetcontainer}>
+        <div className={styles.target} id='target'>
+          <div className={styles.target1} id='target1' onClick={minusOne}></div>
+          <div className={styles.target3} id='target3' onClick={minusThree}></div>
+          <div className={styles.target5} id='target5' onClick={minusFive}></div>
+        </div>
+      </div>
       <div className={styles.scoreboardcontainer}>
         <div className={styles.name}>{player.name}</div>
         <div className={styles.score}>{player.score}</div>
-      </div>
-      <div className={styles.targetcontainer}>
-        <div className={styles.target}>
-          <div className={styles.target1} onClick={minusOne}></div>
-          <div className={styles.target3} onClick={minusThree}></div>
-          <div className={styles.target5} onClick={minusFive}></div>
-        </div>
       </div>
     </>
   )

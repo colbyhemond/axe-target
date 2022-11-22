@@ -15,7 +15,7 @@ export default function MainMenu({onStart}) {
   }
 
   const addPlayer = () => {
-    if (players < 4) {
+    if (players < 8) {
       setPlayers(players + 1)
     }
   }

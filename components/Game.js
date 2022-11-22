@@ -46,9 +46,28 @@ export default function Game({config, onMainMenu}) {
     return <div class={styles.winnerContainer}><h1>{winner.name}</h1><br/><h2>wins!</h2></div>
   }
 
+  const onIncreaseTarget = () => {
+    const target = document.getElementById('target')
+    console.log(target.offsetWidth);
+    let size = target.offsetWidth + 10
+    target.style.minWidth = `${size}px`
+    target.style.minHeight = `${size}px`
+
+  }
+
+  const onDecreaseTarget = () => {
+    const target = document.getElementById('target')
+    console.log(target.offsetWidth);
+    let size = target.offsetWidth - 10
+    target.style.minWidth = `${size}px`
+    target.style.minHeight = `${size}px`
+  }
+
   return (
     <div className={styles.screen}>
         <div className={styles.cursor} onClick={onMainMenu}>{`<- Main Menu`}</div>
+        <div className={styles.cursor} onClick={onIncreaseTarget}>{`+`}</div>
+        <div className={styles.cursor} onClick={onDecreaseTarget}>{`-`}</div>
         {winner ? (
           renderWinner(winner)
         ) : (

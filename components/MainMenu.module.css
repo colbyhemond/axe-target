@@ -1,8 +1,7 @@
 .screen {
     margin: auto;
     height: 100vh;
-    min-width: 500px;
-    width: fit-content;
+    max-width: 500px;
     background-color: black;
     display: flex;
     flex-direction: column;
